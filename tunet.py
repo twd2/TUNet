@@ -110,7 +110,7 @@ if __name__ == '__main__':
         print(format_byte(usage))
         exit(0)
     else:
-        if conn_net(args.username, password_md5)：
+        if conn_net(args.username, password_md5):
             exit(0)
         else:
             exit(1)
