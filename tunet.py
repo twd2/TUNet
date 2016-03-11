@@ -13,6 +13,8 @@ def get(url, **kwargs):
     else:
         request = urllib2.Request(url)
 
+    request.add_header('User-Agent', 'tunet.py/0.1')
+
     response = urllib2.urlopen(request)
     return response.read()
 
